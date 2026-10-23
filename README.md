@@ -23,7 +23,7 @@
 #### Rabid Bite: every melee attack has a 5% chance to inflict the Rabies debuff for 10 seconds.
 #### Rabies: Inflicted entity takes 2 damage per second and they get a 10% defence drop.
 #### Description:
-#### THIS GUY IS BUNS. Going to be the worst character in the game.
+#### The basic character in Planet Mouse. Really loves cheese.
 #### More Characters Coming Soon...
 ## Classes
 ### Warrior

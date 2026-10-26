@@ -39,3 +39,4 @@
 #### War Hammer: A hammer which is great for AOE damage and is excellent at clearing crowds. Probably the best weapon for a beginner. Trades off attack speed for damage.
 #### Katana: A VERY fast sword which is great for close range combat as a front line combatant. Trades off range for Attack Speed.
 #### Broadsword: BIG FLAT HEAVY Sword. Basically the same as the Claymore, but with more damage and less Attack Speed.
+#### Bow and Arrow: Normal Bow and arrow. Arrows are not infinite

@@ -21,7 +21,7 @@
 #### Cheese Heal: When used, mouse heals 10 HP and gains a 20% attack speed boost.
 #### Special Move: 
 #### Rabid Bite: every melee attack has a 5% chance to inflict the Rabies debuff for 10 seconds.
-#### Rabies: Inflicted entity takes 2 damage per second and they get a 10% defence drop.
+#### Rabies(Debuff): Inflicted entity takes 2 damage per second and they get a 10% defence drop.
 #### Description:
 #### The basic character in Planet Mouse. Really loves cheese.
 #### More Characters Coming Soon...

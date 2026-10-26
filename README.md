@@ -44,3 +44,16 @@
 #### Katana: A VERY fast sword which is great for close range combat as a front line combatant. Trades off range for Attack Speed.
 #### Broadsword: BIG FLAT HEAVY Sword. Basically the same as the Claymore, but with more damage and less Attack Speed.
 #### Bow and Arrow: Normal Bow and arrow. Arrows are not infinite
+
+### Ranger
+#### Bow and Arrow: Normal Bow and arrow. Arrows are not infinite. It does ranged damage. The longer you hold the further the arrow reaches and the more damage it does. Is NOT spammable if you spam you get two weak arrows a second. Good for attacking without getting in danger.
+#### Crossbow: Same thing as bow and arrow except it can be preloaded. Trades range and damage for attack speed. Excelent secondary weapon
+#### Longbow: Is a normal bow but trades attack speed for range and damage. Excelent at dealing high damage at far ranges.
+#### Firework: Is a firework. Explosion, fire, and AOE damage. Compatable with bows
+#### Blowgun: Fires silent darts. Trades damage and range for attack speed
+#### Hatchet: Melee weapon for the ranger. Acts as a sword with less range and damage. Great for close combat if you suck at aiming
+#### AWP: A bit out of place. It's a sniper rifle. Very rare very rare but one shots anything. Ammo is also rare. Bullets are hitscan. 
+#### Harpoon: Mobility option. Shoot it at a wall to get pulled to the location you shot. Shoot it at a person to drag that person to you.
+#### Flintlock: Very primitive gun. Trades raw damage for attack speed. Very very slow attack speed and very very long reload speed.
+#### Musket: A flintlock with higher reload speed but higher damage and more speed.
+#### Smoke bomb: Bomb that emits smoke good for escaping best paired with harpoon.

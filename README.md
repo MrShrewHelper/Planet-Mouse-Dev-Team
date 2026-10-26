@@ -1,6 +1,8 @@
 # Planet-Mouse-Dev-Team
 ## Base Game Idea
 #### We are thinking about making a RPG game. This might be similar to a choose your own adventure game. We could have different classes, weapons, storylines ect. This will most likely not be very advanced. You will use WASD or arrow key to move to character, and the mouse to interact with things. Lots of people who like to play games might use this. This game could cater to lots of game styles. It also will be fun to play test. We might might try and make it so you can do two player or even online parties to go through the game.
+## Steps
+### If the player presses the WASD keys, the character moves. If the player clicks on something, they can interact with stuff.
 ## Character Ideas/designs
 ###### Note: We will add some characters design sprites eventually, but these are all concepts.
 ### Vicky:
@@ -25,6 +27,7 @@
 #### Description:
 #### The basic character in Planet Mouse. Really loves cheese.
 #### More Characters Coming Soon...
+# Anything below this is not guaranteed to happen be included
 ## Classes
 ### Warrior
 #### Description: This is your basic adventurer. Basic damage, basic defence Items and armor. Is best at melee damage and frontline fighting. An all round good class for learning the game.

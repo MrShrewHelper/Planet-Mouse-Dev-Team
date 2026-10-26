@@ -17,6 +17,8 @@
 #### Description:
 #### THIS GUY IS BUNS. Going to be the worst character in the game.
 ### Mouse:
+<img width="128" height="128" alt="Mouse (1)" src="https://github.com/user-attachments/assets/479d2fae-e427-4193-86fd-a8e20478cb69" />
+
 #### HP:100
 #### Atack:10
 #### Defence: 5

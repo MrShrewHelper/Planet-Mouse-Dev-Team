@@ -32,7 +32,7 @@
 ##### Note: All weapons can be found in Legendary forms which are better than basic weapons, but they are very rare.
 #### Sword: Simple adventurer weapon basic stats, no downsides
 #### Claymore: BIG Sword. High attack damage, but a slower attack speed. Great For experienced adventurers who are not afraid to take damage and like charging into a fight.
-#### Spear/Glaive ( Note: These are basically same weapon, but a glaive is used more like a sword to slash, while spears jab) Great for a front line combatant who enjoys attacking from a distance and not taking as much damage. Best for experienced players. Trades off attack speed for range and damage.
+#### Spear/Glaive ( Note: These are basically same weapon, but a glaive is used more like a sword to slash, while spears jab we have decided to group these weapons together) Great for a front line combatant who enjoys attacking from a distance and not taking as much damage. Best for experienced players. Trades off attack speed for range and damage.
 #### War Hammer: A hammer which is great for AOE damage and is excellent at clearing crowds. Probably the best weapon for a beginner. Trades off attack speed for damage.
 #### Katana: A VERY fast sword which is great for close range combat as a front line combatant. Trades off range for Attack Speed.
 #### Broadsword: BIG FLAT HEAVY Sword. Basically the same as the Claymore, but with more damage and less Attack Speed.

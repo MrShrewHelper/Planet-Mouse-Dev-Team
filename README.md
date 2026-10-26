@@ -6,7 +6,7 @@
 ## Character Ideas/designs
 ###### Note: We will add some characters design sprites eventually, but these are all concepts.
 ### Vicky:
-<img width="64" height="32" alt="VickySprite1" src="https://github.com/user-attachments/assets/0d725698-9586-4c3a-920e-da7c9a76e025" />
+<img width="258" height="258" alt="VickySprite1" src="https://github.com/user-attachments/assets/0d725698-9586-4c3a-920e-da7c9a76e025" />
 
 #### HP:1
 #### Atack:?

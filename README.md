@@ -27,7 +27,7 @@
 #### Description:
 #### The basic character in Planet Mouse. Really loves cheese.
 #### More Characters Coming Soon...
-# Anything below this is not guaranteed to happen be included
+# Anything below this is not guaranteed to happen or be included
 ## Classes
 ### Warrior
 #### Description: This is your basic adventurer. Basic damage, basic defence Items and armor. Is best at melee damage and frontline fighting. An all round good class for learning the game.

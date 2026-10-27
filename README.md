@@ -25,6 +25,7 @@
 #### THIS GUY IS BUNS. Going to be the worst character in the game.
 ### Mouse:
 <img width="258" height="258" alt="TrueMouse" src="https://github.com/user-attachments/assets/8230cce0-4b7e-4633-b74f-6a8eb687f3a0" />
+
 ### Mouse Walking
 <img width="258" height="258" alt="Walking Mouse (1)" src="https://github.com/user-attachments/assets/49d29dd6-4a63-490b-920a-44c97e5bcdb1" />
 

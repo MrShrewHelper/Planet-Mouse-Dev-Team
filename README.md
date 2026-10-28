@@ -1,8 +1,10 @@
 # Planet-Mouse-Dev-Team
 
 ## Team
-- [Name] - [current contribution or responsibility]
-- [Name] - [current contribution or responsibility]
+- David - Animator, Co-Character Designer, and Sound Designer
+- Jayden - Character Designer and Graphics Creator
+- Dylan - Lead Programmer
+- Amani - Pending
 
 ## First buildable version
 - [ ] A user can [main action].

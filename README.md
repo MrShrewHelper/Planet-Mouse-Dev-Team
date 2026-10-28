@@ -4,7 +4,7 @@
 - David - Animator, Co-Character Designer, and Sound Designer
 - Jayden - Character Designer and Graphics Creator
 - Dylan - Lead Programmer
-- Amani - Pending
+- Amani - Frontend developer + Co-Programmer
 
 ## First buildable version
 - [ ] A user can [main action].

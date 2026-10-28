@@ -15,6 +15,7 @@
 
 ### Viky:
 <img width="258" height="258" alt="VickySprite1" src="https://github.com/user-attachments/assets/0d725698-9586-4c3a-920e-da7c9a76e025" />
+
 ### Viky Walking Animation
 <img width="258" height="258" alt="VickySprite1" src="https://github.com/user-attachments/assets/3105828c-375e-4d9b-8f5d-b8cc02dbf03f" />
 

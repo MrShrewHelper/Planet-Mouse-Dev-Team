@@ -63,7 +63,7 @@
 #### Bow and Arrow: Normal Bow and arrow. Arrows are not infinite. It does ranged damage. The longer you hold the further the arrow reaches and the more damage it does. Is NOT spammable if you spam you get two weak arrows a second. Good for attacking without getting in danger.
 #### Crossbow: Same thing as bow and arrow except it can be preloaded. Trades range and damage for attack speed. Excelent secondary weapon
 #### Longbow: Is a normal bow but trades attack speed for range and damage. Excelent at dealing high damage at far ranges.
-#### Firework: Is a firework. Explosion, fire, and AOE damage. Compatable with bows
+#### Firework Arrow: Is a firework. Explosion, fire, and AOE damage. Compatible with bows. Does A TON of damage
 #### Blowgun: Fires silent darts. Trades damage and range for attack speed
 #### Hatchet: Melee weapon for the ranger. Acts as a sword with less range and damage. Great for close combat if you suck at aiming
 #### AWP: A bit out of place. It's a sniper rifle. Very rare very rare but one shots anything. Ammo is also rare. Bullets are hitscan. 

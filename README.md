@@ -1,4 +1,31 @@
 # Planet-Mouse-Dev-Team
+
+## Team
+- [Name] - [current contribution or responsibility]
+- [Name] - [current contribution or responsibility]
+
+## First buildable version
+- [ ] A user can [main action].
+- [ ] The program responds by [visible result or feedback].
+- [ ] We have limited the first version to [small, realistic scope].
+
+## Design pack
+- [ ] User-interface mockup: [view the mockup](design/ui-mockup.png)
+- [ ] Class diagram: [view the class diagram](design/class-diagram.png)
+- [ ] Logic diagram: [view the logic diagram](design/logic-diagram.png)
+- [ ] Project schedule: [view the schedule](design/project-schedule.png)
+
+## Current status
+[What is complete? What is the team's next step?]
+
+## How to view the artifacts
+[Explain any file type or tool a viewer needs.]
+
+
+
+
+
+
 ## Base Game Idea
 #### We are thinking about making a RPG game. This might be similar to a choose your own adventure game. We could have different classes, weapons, storylines ect. This will most likely not be very advanced. You will use WASD or arrow key to move to character, and the mouse to interact with things. Lots of people who like to play games might use this. This game could cater to lots of game styles. It also will be fun to play test. We might might try and make it so you can do two player or even online parties to go through the game.
 ## Steps

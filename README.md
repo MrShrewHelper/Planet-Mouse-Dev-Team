@@ -15,7 +15,8 @@
 - [ ] User-interface mockup: [view the mockup](design/ui-mockup.png)
 - [ ] Class diagram: [view the class diagram](design/class-diagram.png)
 - [ ] Logic diagram: [view the logic diagram](design/logic-diagram.png)
-- [ ] Project schedule: [view the schedule](design/project-schedule.png)
+- [ ] Project schedule:<img width="494" height="516" alt="Screenshot 2026-11-02 at 8 36 10 AM" src="https://github.com/user-attachments/assets/500927a1-4371-4fbb-977f-0bf1a9d26253" />
+
 
 ## Current status
 [What is complete? What is the team's next step?]

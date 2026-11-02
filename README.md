@@ -12,8 +12,8 @@
 - [ ] We have limited the first version to [small, realistic scope].
 
 ## Design pack
-- [ ] User-interface mockup: [view the mockup](design/ui-mockup.png)
-- [ ] Class diagram: [view the class diagram](design/class-diagram.png)
+- [ ] User-interface mockup: [view the mockup](<img width="692" height="589" alt="PlanetMouse" src="https://github.com/user-attachments/assets/b535a0b5-280c-4560-8468-db05d123fc66" />)
+- [ ] Class diagram: [view the class diagram](![Uploading PlanetMouse.jpg…]())
 - [ ] Logic diagram: [view the logic diagram](design/logic-diagram.png)
 - [ ] Project schedule:<img width="494" height="516" alt="Screenshot 2026-11-02 at 8 36 10 AM" src="https://github.com/user-attachments/assets/500927a1-4371-4fbb-977f-0bf1a9d26253" />
 

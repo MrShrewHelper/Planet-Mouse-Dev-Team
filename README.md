@@ -13,8 +13,8 @@
 
 ## Design pack
 - [ ] User-interface mockup: [view the mockup](<img width="692" height="589" alt="PlanetMouse" src="https://github.com/user-attachments/assets/b535a0b5-280c-4560-8468-db05d123fc66" />)
-- [ ] Class diagram: [view the class diagram](![<img width="692" height="589" alt="PlanetMouse" src="https://github.com/user-attachments/assets/7881f7a4-815c-45d2-90d4-7fd44b877dd1" />
-)
+- [ ] Class diagram: [view the class diagram]![<img width="692" height="589" alt="PlanetMouse" src="https://github.com/user-attachments/assets/7881f7a4-815c-45d2-90d4-7fd44b877dd1" />
+
 - [ ] Logic diagram: [view the logic diagram](design/logic-diagram.png)
 - [ ] Project schedule:<img width="494" height="516" alt="Screenshot 2026-11-02 at 8 36 10 AM" src="https://github.com/user-attachments/assets/500927a1-4371-4fbb-977f-0bf1a9d26253" />
 

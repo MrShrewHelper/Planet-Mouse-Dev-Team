@@ -2,7 +2,7 @@
 
 class Player {
   //Member Variable
-  inter x,y,w,h,health;
+  int x,y,w,h,health;
   color c1;
   PImage p1;
   //Constructor

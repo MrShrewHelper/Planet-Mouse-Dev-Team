@@ -1,23 +1,25 @@
 // Jayden Liu
 
 class Projectile {
-// Member variables
-int x,y,w,h,dmg;
-PImage p1;
+  // Member variables
+  int x, y, w, h, dmg;
+  PImage p1;
 
 
-// Constructor
-Projectitle {
-x = x_enemy;
-y = y_enemy;
-w = 10;
-h = 10;
-dmg = 5;
-PImage = loadImage("");
-}
-
-// Member Methods
-void display() {}
-void move (char dir) {}
-
+  // Constructor
+  Projectile () {
+    x = 50;
+    y = 50;
+    w = 10;
+    h = 10;
+    dmg = 5;
+    p1 = loadImage("enemy.png");
+  }
+  
+  // Member Methods
+  void display() {
+    image(p1,x,y);
+  }
+  void move (char dir) {
+  }
 }

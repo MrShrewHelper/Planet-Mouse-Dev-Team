@@ -13,7 +13,7 @@ class Enemy {
   w = 50;
   h = 50;
   health = 100;
-  c1 = color(0)
+  c1 = color(0);
   e1 = loadImage("");
 }
   
@@ -27,6 +27,6 @@ void display () {
 }
 void move (char dir) {}
 void fire () {}
-void attack
+void attack () {}
 
 }

@@ -1,6 +1,7 @@
 // David Madden, Amani Liu, Jayden Liu, Dylan Cheng
 Player p1;
 Enemy: e1;
+Boss Juan;
 
 
 void setup() {

@@ -97,7 +97,7 @@
 #### Firework Arrow: Is a firework. Explosion, fire, and AOE damage. Compatible with bows. Does A TON of damage
 #### Blowgun: Fires silent darts. Trades damage and range for attack speed
 #### Hatchet: Melee weapon for the ranger. Acts as a sword with less range and damage. Great for close combat if you suck at aiming
-#### AWP: A bit out of place. It's a sniper rifle. Very rare very rare but one shots anything. Ammo is also rare. Bullets are hitscan. 
+#### AWP: A bit out of place. It's a sniper rifle. Very rare very rare but does extreme damage to everything. Ammo is also rare. Bullets are hitscan. Has a very slow reload and shooting speed.
 #### Harpoon: Mobility option. Shoot it at a wall to get pulled to the location you shot. Shoot it at a person to drag that person to you.
 #### Flintlock: Very primitive gun. Trades raw damage for attack speed. Very very slow attack speed and very very long reload speed.
 #### Musket: A flintlock with higher reload speed but higher damage and more speed.

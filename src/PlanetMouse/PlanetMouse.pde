@@ -4,7 +4,7 @@ Enemy e1;
 
 
 void setup() {
-  size(width, height);
+  size(1000, 1000);
   p1 = new Player();
   e1 = new Enemy();
 }

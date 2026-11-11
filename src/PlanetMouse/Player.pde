@@ -1,11 +1,8 @@
-// Dylan Cheng
-
 class Player {
   int x, y, w, h, health;
   color c1;
   PImage p1;
 
-  // Constructor
   Player() {
     x = 500;
     y = 50;
@@ -13,20 +10,19 @@ class Player {
     h = 90; 
     health = 100;
     c1 = color(#00FF39);
-    p1 = loadImage("image.png");
+    p1 = loadImage("character.png");
+  }
+  
+  void display() {
+    image(p1, x, y, w, h);
   }
 
- 
-  void display () {
-    image(p1, 200, y, w, h);
+  void move(char dir) {
   }
 
-  void move (char dir) {
+  void fire() {
   }
 
-  void fire () {
-  }
-
-  void attack () {
+  void attack() {
   }
 }

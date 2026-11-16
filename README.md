@@ -1,4 +1,4 @@
-# Planet-Mouse-Dev-Team
+# Planet Mouse: Platformer-Dev-Team
 
 ## Team
 - David - Animator, Co-Character Designer, and Sound Designer

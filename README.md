@@ -43,7 +43,7 @@
 
 ## Character Ideas/designs
 ###### Note: We will add some characters design sprites eventually, but these are all concepts.
-
+# Other Note: We have decided to go away from a RPG style game and are now making a platformer like game.
 ### Viky:
 <img width="258" height="258" alt="VickySprite1" src="https://github.com/user-attachments/assets/0d725698-9586-4c3a-920e-da7c9a76e025" />
 

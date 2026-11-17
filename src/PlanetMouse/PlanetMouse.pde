@@ -4,59 +4,52 @@ float y = 100;
 float velocityY = 0;
 float accelerationX = 0;
 float velocityX = 0;
-float gravity = 0.4;
+float gravity = 0.25;
 float bounce = -0.75; // Energy retained after floor collision (75%)
 float radius = 25;
+float groundLevel = 500;
+int Djump = 0;
 boolean ground = false;
 boolean jump = false;
+boolean leftPressed = false;
+boolean rightPressed = false;
+
 
 
 void setup() {
   size(1000, 600);
-  frameRate (100);
+  frameRate (140);
 }
 
 void draw() {
-  background(220);
+  background(135, 206, 235); //sky blue
 
-  // 1. Apply gravity to vertical velocity
-  if (ground == false) {
+
+  fill(34, 139, 34); // Forest Green Ground
+  noStroke();
+  rect(0, groundLevel, width, height - groundLevel);
+
+
+  if (!ground) {
     velocityY += gravity;
   }
-  velocityX += accelerationX;
-  //air resistence
 
-  if (ground == true) {
-    if (velocityX > 0 || velocityX < 0 ) {
-      accelerationX = accelerationX/1.08;
-      velocityX = velocityX/1.08;
-    }
-  } 
-  else if (ground == false) {
-    if (velocityX > 0 || velocityX < 0 ) {
-      accelerationX = accelerationX/1.02;
-      velocityX = velocityX/1.02;
-    }
+  if (leftPressed) {
+    velocityX = -2;
+  } else if (rightPressed) {
+    velocityX = 2;
+  } else {
+    velocityX *= 0.75; // Smooth friction/slowdown when keys are released
   }
   // 2. Update vertical position by velocity
+  x += velocityX;
   y += velocityY;
-  x += velocityX/10;
 
-  if (jump == true) {
-    y = height - radius ;
-  }
-
-
-  // 3. Collision with the floor
-  if (y + radius > height-1) {
+  if (y + radius >= groundLevel) {
+    y = groundLevel - radius;
+    velocityY = 0;
     ground = true;
-  } else {
-    ground = false;
-  }
-
-
-  if (ground) {
-    jump = true;    // Snap to floor so it doesn't get stuck
+    Djump = 0;
   }
 
   // Render the object
@@ -67,17 +60,21 @@ void draw() {
 
 
 
-void keyPressed() { // Player Movement
-  if (accelerationX < 1 || accelerationX < -1 ) {
-    if (key == 'a' || key== 'a') {
-      accelerationX = -4;
-    } else if (key == 'd' || key== 'd') {
-      accelerationX = 4;
+void keyPressed() {
+  if (key == 'a') leftPressed = true;
+  if (key == 'd') rightPressed = true;
+
+  // Jump and Double Jump
+  if (key == 'w') {
+    if (ground || Djump < 2) {
+      ground = false;
+      velocityY = -8;
+      Djump += 1;
     }
-  }
-  if (key == 'w' && jump == true) {
-    velocityY = -10;
-    jump = false;
   }
 }
 
+void keyReleased() {
+  if (key == 'a' || key == 'A') leftPressed = false;
+  if (key == 'd' || key == 'D') rightPressed = false;
+}

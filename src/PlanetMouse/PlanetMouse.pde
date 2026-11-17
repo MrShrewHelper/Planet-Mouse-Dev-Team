@@ -5,7 +5,6 @@ float velocityY = 0;
 float accelerationX = 0;
 float velocityX = 0;
 float gravity = 0.25;
-float bounce = -0.75; // Energy retained after floor collision (75%)
 float radius = 25;
 float groundLevel = 500;
 int Djump = 0;
@@ -34,17 +33,21 @@ void draw() {
     velocityY += gravity;
   }
 
+
+//movement code
   if (leftPressed) {
     velocityX = -2;
   } else if (rightPressed) {
     velocityX = 2;
   } else {
-    velocityX *= 0.75; // Smooth friction/slowdown when keys are released
+    velocityX *= 0.75; // air resistance or friction
   }
   // 2. Update vertical position by velocity
   x += velocityX;
   y += velocityY;
 
+
+// makes it so you don't phase through the ground
   if (y + radius >= groundLevel) {
     y = groundLevel - radius;
     velocityY = 0;
@@ -55,6 +58,18 @@ void draw() {
   // Render the object
   fill(50, 120, 240);
   ellipse(x, y, radius * 2, radius * 2);
+  
+  
+  
+  //platform generation
+  //idk what to do yet help
+  
+  
+  
+  
+  
+  
+  
 }
 
 

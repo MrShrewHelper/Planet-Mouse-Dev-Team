@@ -1,13 +1,9 @@
 // Jayden Liu
-
 class Projectile {
-  // Member variables
   int x, y, w, h, dmg;
   PImage p1;
 
-
-  // Constructor
-  Projectile () {
+  Projectile() {
     x = 50;
     y = 50;
     w = 10;
@@ -16,10 +12,15 @@ class Projectile {
     p1 = loadImage("enemy.png");
   }
   
-  // Member Methods
   void display() {
-    image(p1,x,y);
+    if (p1 != null) {
+      image(p1, x, y, w, h);
+    } else {
+      fill(255, 200, 0);
+      ellipse(x, y, w, h);
+    }
   }
-  void move (char dir) {
+
+  void move(char dir) {
   }
 }

@@ -1,4 +1,4 @@
-//Amani
+// Amani
 class Enemy {
   int x, y, w, h, health;
   color c1;

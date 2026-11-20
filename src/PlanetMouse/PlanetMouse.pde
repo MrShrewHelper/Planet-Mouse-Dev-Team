@@ -1,10 +1,10 @@
 // David Madden, Amani Liu, Jayden Liu, Dylan Cheng
-float x = 200;
+float x = 100;
 float y = 100;
 float velocityY = 0;
 float accelerationX = 0;
 float velocityX = 0;
-float gravity = 0.19;
+float gravity = 0.25;
 float radius = 25;
 float groundLevel = 500;
 int Djump = 0;
@@ -13,74 +13,135 @@ boolean jump = false;
 boolean leftPressed = false;
 boolean rightPressed = false;
 
+// Player image and facing direction (1 = left, -1 = right)
+PImage playerImg;
+int facing = -1;
 
+// Floor gap variables
+float gapStart = 220; // Where the left ledge ends
+float gapEnd = 780;   // Where the right ledge begins
+
+// List to hold the platforms
+ArrayList<Platform> platforms = new ArrayList<Platform>();
+int numPlatforms = 6;
 
 void setup() {
   size(1000, 600);
-  frameRate (140);
+  frameRate(140);
+  
+  // Load the image from your sketch's "data" folder
+  playerImg = loadImage("UMP.png");
+  
+  generatePlatforms();
+}
+
+void generatePlatforms() {
+  platforms.clear();
+  for (int i = 0; i < numPlatforms; i++) {
+    float pWidth = random(100, 180);
+    float pHeight = 20;
+    float pX = random(gapStart - 50, gapEnd - pWidth + 50); 
+    float pY = random(200, groundLevel - 60); 
+    
+    platforms.add(new Platform(pX, pY, pWidth, pHeight));
+  }
 }
 
 void draw() {
-  background(135, 206, 235); //sky blue
+  background(#B2B0B0); // light grey
 
-
-  fill(34, 139, 34); // Forest Green Ground
+  // Draw the two pieces of ground (leaving a gap in the middle)
+  fill(#555555); // grey
   noStroke();
-  rect(0, groundLevel, width, height - groundLevel);
+  rect(0, groundLevel, gapStart, height - groundLevel);             // Left ledge
+  rect(gapEnd, groundLevel, width - gapEnd, height - groundLevel); // Right ledge
 
-
-  if (!ground) {
-    velocityY += gravity;
+  // Draw all platforms
+  for (Platform p : platforms) {
+    p.display();
   }
 
-
-//movement code
+  // Movement code & facing direction update
   if (leftPressed) {
-    velocityX = -2;
+    velocityX = -3;
+    facing = -1;  // Face left for 'A'
   } else if (rightPressed) {
-    velocityX = 2;
+    velocityX = 3;
+    facing = 1; // Face right for 'D'
   } else {
     velocityX *= 0.75; // air resistance or friction
   }
-  // 2. Update vertical position by velocity
+
+  // Update position by velocity
   x += velocityX;
   y += velocityY;
 
+  // Screen wrapping / next area trigger (reached the right edge)
+  if (x - radius > width) {
+    x = radius; // Teleport to the start (left side)
+    generatePlatforms(); // Randomize platforms for the new screen
+  }
+  
+  // Prevent walking off the left side of the screen
+  if (x - radius < 0) {
+    x = radius;
+    velocityX = 0;
+  }
 
-// makes it so you don't phase through the ground
-  if (y + radius >= groundLevel) {
+  // Respawn at the start if the player falls into the gap
+  if (y - radius > height) {
+    x = 100;
+    y = 100;
+    velocityX = 0;
+    velocityY = 0;
+    Djump = 0;
+    facing = -1;
+  }
+
+  // Assume player is in the air unless touching ground or a platform
+  ground = false;
+
+  // Check collision with the LEFT and RIGHT ground ledges (ignore the gap)
+  boolean overLeftLedge = (x < gapStart);
+  boolean overRightLedge = (x > gapEnd);
+
+  if ((overLeftLedge || overRightLedge) && y + radius >= groundLevel && y - radius < groundLevel) {
     y = groundLevel - radius;
     velocityY = 0;
     ground = true;
     Djump = 0;
   }
 
-  // Render the object
-  fill(50, 120, 240);
-  ellipse(x, y, radius * 2, radius * 2);
-  
-  
-  
-  //platform generation
-  //idk what to do yet help
-  
-  
-  
-  
-  
-  
-  
+  // Check collision with every platform
+  for (Platform p : platforms) {
+    if (p.checkCollision(x, y, radius, velocityY)) {
+      y = p.y - radius;
+      velocityY = 0;
+      ground = true;
+      Djump = 0;
+    }
+  }
+
+  // Apply gravity only if not standing on ground or a platform
+  if (!ground) {
+    velocityY += gravity;
+  }
+
+  // Render the player flipped according to 'facing' with updated size and y-offset
+  pushMatrix();
+  translate(x, y);      // Move the origin to the player's center
+  scale(facing, 1);     // Mirror horizontally if facing == -1
+  imageMode(CENTER);
+  image(playerImg, 0, -20, radius * 3.6, radius * 3.6);
+  popMatrix();
 }
 
-
-
-
 void keyPressed() {
-  if (key == 'a') leftPressed = true;
-  if (key == 'd') rightPressed = true;
+  if (key == 'a' || key == 'A') leftPressed = true;
+  if (key == 'd' || key == 'D') rightPressed = true;
 
   // Jump and Double Jump
-  if (key == 'w') {
+  if (key == 'w' || key == 'W') {
     if (ground || Djump < 2) {
       ground = false;
       velocityY = -8;

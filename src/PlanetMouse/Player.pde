@@ -14,7 +14,12 @@ class Player {
   }
   
   void display() {
-    image(p1, x, y, w, h);
+    if (p1 != null) {
+      image(p1, x, y, w, h);
+    } else {
+      fill(c1);
+      rect(x, y, w, h);
+    }
   }
 
   void move(char dir) {

@@ -13,15 +13,15 @@ boolean jump = false;
 boolean leftPressed = false;
 boolean rightPressed = false;
 
-// Player image and facing direction (1 = left, -1 = right)
+// Player direction part using (1 = left, -1 = right)
 PImage playerImg;
 int facing = -1;
 
-// Floor gap variables
+// Abyss in the floor
 float gapStart = 220; // Where the left ledge ends
 float gapEnd = 780;   // Where the right ledge begins
 
-// List to hold the platforms
+// List to make it so the platforms can exist
 ArrayList<Platform> platforms = new ArrayList<Platform>();
 int numPlatforms = 6;
 
@@ -29,7 +29,7 @@ void setup() {
   size(1000, 600);
   frameRate(140);
   
-  // Load the image from your sketch's "data" folder
+  // To load the image
   playerImg = loadImage("UMP.png");
   
   generatePlatforms();
@@ -50,33 +50,33 @@ void generatePlatforms() {
 void draw() {
   background(#B2B0B0); // light grey
 
-  // Draw the two pieces of ground (leaving a gap in the middle)
+  // Create the gap in the floor
   fill(#555555); // grey
   noStroke();
   rect(0, groundLevel, gapStart, height - groundLevel);             // Left ledge
   rect(gapEnd, groundLevel, width - gapEnd, height - groundLevel); // Right ledge
 
-  // Draw all platforms
+  // Draw platforms
   for (Platform p : platforms) {
     p.display();
   }
 
-  // Movement code & facing direction update
+  // Movement code & facing direction code
   if (leftPressed) {
     velocityX = -3;
-    facing = -1;  // Face left for 'A'
+    facing = -1;  // Face left for 'A' key
   } else if (rightPressed) {
     velocityX = 3;
-    facing = 1; // Face right for 'D'
+    facing = 1; // Face right for 'D' key
   } else {
-    velocityX *= 0.75; // air resistance or friction
+    velocityX *= 0.75; // air resistance or friction code
   }
 
   // Update position by velocity
   x += velocityX;
   y += velocityY;
 
-  // Screen wrapping / next area trigger (reached the right edge)
+  // move to next level
   if (x - radius > width) {
     x = radius; // Teleport to the start (left side)
     generatePlatforms(); // Randomize platforms for the new screen
